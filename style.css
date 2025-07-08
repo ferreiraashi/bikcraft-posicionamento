@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    font-family: Arial;
+    justify-items: center;
+    margin: 0;
+    gap: 40px;
+    margin-top: 60px;
+    background: #f7f7f7;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+   
+}
+
+.nav-flex {
+    display: flex;
+    gap: 15px;
+}
+
+.nav {
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
