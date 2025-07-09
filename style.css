@@ -8,6 +8,10 @@ body {
     background: #f7f7f7;
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
 }
@@ -16,9 +20,11 @@ a {
     text-decoration: none;
 }
 
-.logo {
-   
+p {
+    font-size: 20px;
+    margin: 0;
 }
+
 
 .nav-flex {
     display: flex;
@@ -28,6 +34,29 @@ a {
 .nav {
     background: #ffffff;
     color: #000000;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bike-content {
+    display: grid;
+    place-items: center end;
+    align-content: center;
+    gap: 20px;
+    background: #ffffff;
+    padding: 30px;
+    text-align: end;
+}
+
+.bnt-content {
+    background: #ee2211;
+    color: #ffffff;
     padding: 10px 25px;
     border-radius: 4px;
 }
