@@ -36,6 +36,7 @@ p {
     color: #000000;
     padding: 10px 25px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .grid-container {
@@ -59,4 +60,15 @@ p {
     color: #ffffff;
     padding: 10px 25px;
     border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.vantagens {
+    padding: 20px;
+    font-size: 64px;
+    align-self: center;
+    justify-self: end;
+    text-align: end;
+    color: #c6c6c6;
+    text-transform: uppercase;
 }
