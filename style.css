@@ -1,74 +1,100 @@
 body {
-    display: grid;
-    font-family: Arial;
-    justify-items: center;
-    margin: 0;
-    gap: 40px;
-    margin-top: 60px;
-    background: #f7f7f7;
+  font-family: Arial;
+  margin: 0;
+  background: #f7f7f7;
 }
 
-h1, h2, h3, h4 {
-    margin: 0;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    font-size: 20px;
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
 }
 
+.content {
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
 
 .nav-flex {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .nav {
-    background: #ffffff;
-    color: #000000;
-    padding: 10px 25px;
-    border-radius: 4px;
-    text-transform: uppercase;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .grid-container {
-    display: grid;
-    max-width: 1000px;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .bike-content {
-    display: grid;
-    place-items: center end;
-    align-content: center;
-    gap: 20px;
-    background: #ffffff;
-    padding: 30px;
-    text-align: end;
+  display: grid;
+  place-items: center end;
+  align-content: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 40px;
+  text-align: end;
 }
 
 .bnt-content {
-    background: #ee2211;
-    color: #ffffff;
-    padding: 10px 25px;
-    border-radius: 4px;
-    text-transform: uppercase;
+  background: #ee2211;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .vantagens {
-    padding: 20px;
-    font-size: 64px;
-    align-self: center;
-    justify-self: end;
-    text-align: end;
-    color: #c6c6c6;
-    text-transform: uppercase;
+  padding: 40px;
+  font-size: 64px;
+  align-self: center;
+  justify-self: end;
+  text-align: end;
+  color: #c6c6c6;
+  text-transform: uppercase;
+}
+
+.bike-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.info {
+  display: grid;
+  gap: 40px;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.bike-info p {
+  grid-column: 2;
+}
+
+.footer {
+  background: #ffffff;
 }
