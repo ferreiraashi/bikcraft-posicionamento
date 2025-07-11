@@ -2,12 +2,17 @@ body {
   font-family: Arial;
   margin: 0;
   background: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+  margin-top: 60px;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+ul {
   margin: 0;
 }
 
@@ -24,24 +29,32 @@ p {
   margin: 0;
 }
 
-.content {
+li {
+  list-style: none;
+}
+
+header {
   display: grid;
   justify-items: center;
   gap: 40px;
-  margin-top: 60px;
 }
 
-.nav-flex {
+.menu {
   display: flex;
   gap: 15px;
 }
 
-.nav {
+.menu a{
   background: #ffffff;
   color: #000000;
   padding: 10px 25px;
   border-radius: 4px;
   text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
+.menu a:hover {
+  border: 2px solid #ee2211;
 }
 
 .grid-container {
@@ -51,6 +64,7 @@ p {
 }
 
 .bike-content {
+  position: relative;
   display: grid;
   place-items: center end;
   align-content: center;
@@ -58,6 +72,16 @@ p {
   background: #ffffff;
   padding: 40px;
   text-align: end;
+}
+
+.bike-content::before {
+  content: "";
+  background: #ee2211;
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  top: 20px;
+  right: -30px;
 }
 
 .bnt-content {
@@ -68,6 +92,10 @@ p {
   text-transform: uppercase;
 }
 
+.bnt-content:hover {
+  background-color: #900;
+}
+
 .vantagens {
   padding: 40px;
   font-size: 64px;
@@ -76,12 +104,24 @@ p {
   text-align: end;
   color: #c6c6c6;
   text-transform: uppercase;
+  background-image: url(./img/onda.svg);
 }
 
 .bike-info {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
+  padding: 15px;
+  border-left: 3px solid #ffffff;
+}
+
+.bike-info:nth-child(odd) {
+  background-color: #f7f7f7;
+  border-left: 3px solid #f7f7f7;
+}
+
+.bike-info:hover {
+  border-left: 3px solid #ee2211;
 }
 
 .info {
@@ -97,6 +137,7 @@ p {
 
 .footer {
     background: #ffffff;
+    width: 100vw;
     padding: 20px;
     text-align: center;
     margin-top: 40px;
